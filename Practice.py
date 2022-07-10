@@ -1,8 +1,11 @@
-import mymodule as mx
+array = [[],[]]
 
-import mymodule
+for i in range(999, 1010):
+  array[0].append(str(i + 1))
 
-print(dir(mymodule))
 
+for item in array[0]:
+  for k in range(len(item) + 1):
+    array[1].append(item[0:k] + 'a' + item[k:len(item)])
 
-from mymodule import person1
+print(array)
