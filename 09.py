@@ -1,9 +1,9 @@
 from decimal import * 
-a = 2
+a = 100000
 x = 2  
 z = Decimal(1/2)*Decimal(x+a/x)
 
-for i in range(100):
+for i in range(10):
   x = z
   z = Decimal(1/2)*Decimal(x+a/x)
 
