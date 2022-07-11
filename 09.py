@@ -1,11 +1,14 @@
 from decimal import * 
-a = 1000000
+a = 100
+k = 1
 x = 2  
 z = Decimal(1/2)*Decimal(x+a/x)
 
-for i in range(100):
+while abs(Decimal(z-x))>Decimal(10**(-20)):
+
   x = z
-  z = Decimal(1/2)*Decimal(x+a/x)
+  z = Decimal(x/z+1/x)
+  k = k+1
 
 print(x)
-print(z)
+print(k)
