@@ -20,11 +20,15 @@ while abs(Decimal(z-x))>Decimal(23**(-20)):
 print(x)
 print(k)
 """
+old = [1,2]
+new = [sqrt(x) for x in old]
 
-def square_num(n):
-  return n * n
-nums = [1000000, 5, 2, 9]
-print("Original List: ",nums)
-result = map(square_num, nums)
-print("Square the elements of the said list using map():")
-print(list(result))
+def sqrt_list(old):
+    new_list = []
+
+    for i in old:
+        new_list.append(sqrt(i))
+
+    return new_list
+
+print(sqrt_list([11, 22, 33]))
