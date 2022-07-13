@@ -18,7 +18,7 @@ for n in a:
     z = Decimal(x/z+1/x)
     k = k+1
 
-  print(x)
-  print(k)
+print(x)
+print(k)
 
    
