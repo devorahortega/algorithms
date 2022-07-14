@@ -15,12 +15,16 @@ for n in range(l-1):
   for item in permutations[n]:
     for k in range(len(item)+1):
       permutations[n+1].append(item[0:k]+digit+item[k:len(item)])
+"""
+for item in permutations[l-1]:
+  print(item)
+"""
 
-a = permutations
+a = item
 k = 1
 x = 2  
 
-for n in a:
+for item in permutations[5]:
   z = Decimal(1/2)*Decimal(x+a/x)
   while abs(Decimal(z-x))>Decimal(23**(-20)):
 
