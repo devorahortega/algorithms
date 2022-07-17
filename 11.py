@@ -1,7 +1,7 @@
-import numpy as np
+import random
+n = 100
+numbers = []
+for i in range(n):
+  numbers.append(random.randrange(1,100000))
 
-n = np.random.randint(1,100,000,100)
-
-n
-  array([69,  7, 11, 12, 83])
-
+print(numbers)
