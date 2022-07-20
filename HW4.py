@@ -19,16 +19,9 @@ for x in range(100):
                              string.digits, k=N))
   strings.append(str(res))
 
-  
-print("The generated random string : " + str(res))
 print(strings)
 
-"""
-numbers = []
-for i in range(n):
-  numbers.append(random.randrange(1,100000))
-
-print(numbers)
+n = 100
 
 for i in range(n):
   done=False
@@ -37,13 +30,12 @@ for i in range(n):
     if j<0:
       done=True
     else:
-      if numbers[j+1]>numbers[j]:
-        a = numbers[j]
-        numbers[j] = numbers[j+1]
-        numbers[j+1] = as
+      if strings[j+1]>strings[j]:
+        a = strings[j]
+        strings[j] = strings[j+1]
+        strings[j+1] = a
         j=j-1
       else:
          done=True
 
-print(numbers)
-"""
+print(strings)
