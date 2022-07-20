@@ -12,11 +12,16 @@ using an extra library.
 import string
 import random
 N = 10
+strings = []
 
-res = ''.join(random.choices(string.ascii_uppercase +
+for x in range(100):
+  res = ''.join(random.choices(string.ascii_uppercase +
                              string.digits, k=N))
+  strings.append(str(res))
 
+  
 print("The generated random string : " + str(res))
+print(strings)
 
 """
 numbers = []
