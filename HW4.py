@@ -8,9 +8,17 @@ need to look up the generation of random string and this may entail
 using an extra library.
 
 """
-  
+
+import string
 import random
-n = 100
+N = 10
+
+res = ''.join(random.choices(string.ascii_uppercase +
+                             string.digits, k=N))
+
+print("The generated random string : " + str(res))
+
+"""
 numbers = []
 for i in range(n):
   numbers.append(random.randrange(1,100000))
@@ -33,3 +41,4 @@ for i in range(n):
          done=True
 
 print(numbers)
+"""
