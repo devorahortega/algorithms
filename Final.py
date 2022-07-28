@@ -11,6 +11,9 @@ for n in range(l-1):
 for item in permutations[l-1]:
   print(item)
 
+import random
+import string
+
 letters = string.ascii_lowercase 
 n = 100
 strings = []
