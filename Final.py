@@ -50,3 +50,10 @@ elif len(strings) < 5:
   print("Apple")
 elif len(strings) == 5:
   print("Orange")
+
+  """
+This program creates a list of permutations from a random number 1-10.
+And then uses the lenght to generate random strings.
+Then finally depending on the number a different fruit is printed.
+
+  """
