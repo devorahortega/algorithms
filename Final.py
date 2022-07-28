@@ -1,4 +1,7 @@
-l = 5
+import random
+import string
+
+l = random.randint(1,10) 
 permutations = []
 permutations.append(['1'])
 for n in range(l-1):
@@ -8,20 +11,21 @@ for n in range(l-1):
   for item in permutations[n]:
     for k in range(len(item)+1):
       permutations[n+1].append(item[0:k]+digit+item[k:len(item)])
+"""
 for item in permutations[l-1]:
   print(item)
-
-import random
-import string
+"""
 
 letters = string.ascii_lowercase 
-n = 100
+n = len(permutations)
 strings = []
 
 for i in range(n):
   strings.append(''.join(random.choice(letters)for i in range(10)))
 
+"""
 print(strings)
+"""
 
 for i in range(n):
   done=False
@@ -39,3 +43,10 @@ for i in range(n):
          done=True
 
 print(strings)
+
+if len(strings) > 5:
+  print("Banana")
+elif len(strings) < 5:
+  print("Apple")
+elif len(strings) == 5:
+  print("Orange")
